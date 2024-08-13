@@ -21,7 +21,7 @@ function CartResume() {
   return (
     <Card>
       <P>Order Total</P>
-      <TotalPrice>Rp.{total}</TotalPrice>
+      <TotalPrice>Rp. {total}</TotalPrice>
     </Card>
   );
 }

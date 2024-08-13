@@ -31,8 +31,8 @@ function CartItemDetails({ cartItem }) {
         <Card.SubTitle>{cartItem.name}</Card.SubTitle>
         <Card.Summary>
           <Card.Quantity>{cartItem.qte}x</Card.Quantity>
-          <Card.UnitPrice>@ Rp.{cartItem.price.toFixed(2)}</Card.UnitPrice>
-          <Card.TotalPrice>Rp.{(cartItem.price * cartItem.qte).toFixed(2)}</Card.TotalPrice>
+          <Card.UnitPrice>Rp. {cartItem.price.toFixed(2)}</Card.UnitPrice>
+          <Card.TotalPrice>Rp. {(cartItem.price * cartItem.qte).toFixed(2)}</Card.TotalPrice>
         </Card.Summary>
       </div>
       <div>
@@ -56,13 +56,13 @@ function ModalCard({ cartItem }) {
             <Card.SubTitle>{cartItem.name}</Card.SubTitle>
             <Card.Summary>
               <Card.Quantity>{cartItem.qte}x</Card.Quantity>
-              <Card.UnitPrice>@ Rp.{cartItem.price.toFixed(2)}</Card.UnitPrice>
+              <Card.UnitPrice>Rp. {cartItem.price.toFixed(2)}</Card.UnitPrice>
             </Card.Summary>
           </div>
         </Card.WithThumbnail>
       </div>
       <div>
-        <Card.SubTitle>Rp.{(cartItem.price * cartItem.qte).toFixed(2)}</Card.SubTitle>
+        <Card.SubTitle>Rp. {(cartItem.price * cartItem.qte).toFixed(2)}</Card.SubTitle>
       </div>
     </Card>
   );

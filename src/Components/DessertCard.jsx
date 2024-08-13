@@ -142,7 +142,7 @@ function DessertCard({ dessertItem }) {
       <div>
         <Category>{dessertItem.category}</Category>
         <Title>{dessertItem.name}</Title>
-        <Price>Rp.{dessertItem.price}</Price>
+        <Price>Rp. {dessertItem.price}</Price>
       </div>
     </article>
   );

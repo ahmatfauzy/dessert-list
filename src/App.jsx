@@ -2,6 +2,14 @@ import Cart from "./Components/Cart";
 import Desserts from "./Components/Desserts";
 import styled from "styled-components";
 import CartContextProvider from "./Context/CartContext";
+import desserts from '../public/data.json';
+
+desserts.forEach(dessert => {
+    dessert.price = dessert.price.toLocaleString('id-ID', { style: 'currency', currency: 'IDR' });
+});
+
+console.log(desserts);
+
 
 const StyledContainer = styled.main`
   padding: 64px 48px;
